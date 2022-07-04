@@ -1,0 +1,62 @@
+#include<iostream>
+using namespace std;
+
+int a[10001];
+int s;
+
+void push(int x){
+    a[s]=x;//top에 push하기(맨위에 push하는거라 s사이즈에 집어넣기)
+    s++;//사이즈 +1
+}
+int pop(){
+    if(s==0) return -1;//스택에 들어가있는 정수가 없는 경우 -1리턴
+    //스택에서 가장 위에있는 정수빼고, 출력
+    int top = a[s-1];
+    s--;
+    return top;   
+}
+int size(){
+    return s;
+}
+int empty(){
+    if(s==0) return 1;
+    else return 0;
+}
+int top(){
+    if(s==0) return -1;
+    return a[s-1];
+}
+
+int main(){
+    int num;
+    string str;
+    int N;
+    cin>>N;
+    
+    for (int i = 0; i < N; i++){
+      cin>>str;
+        if(str == "push"){
+            cin>>num;
+            push(num);
+        }
+        if(str == "pop"){
+            cout<<pop()<<endl;
+        }
+        if(str == "size"){
+            cout<<size()<<endl;
+        }
+        if(str == "empty"){
+            cout<<empty()<<endl;
+        }
+        if(str == "top"){
+            cout<<top()<<endl;
+        }
+    }
+}
+
+
+
+
+
+
+
