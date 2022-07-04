@@ -1,0 +1,12 @@
+a=int(input())
+b=int(input())
+
+x_1=a*(b%10)#3
+x_2=a*(b//10%10)#4
+x_3=a*(b//100)
+x_4=x_1+x_2*10+x_3*100
+
+print(x_1)
+print(x_2)
+print(x_3)
+print(x_4)
