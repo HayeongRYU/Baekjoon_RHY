@@ -1,0 +1,12 @@
+
+H,M = map(int, input().split())
+
+if M<45:#현시각이 45분보다 작을때
+  if H==0:#00시라면
+    H=23
+    M+=60
+  else:
+    H-=1
+    M+=60
+M-=45
+print(H, M)
