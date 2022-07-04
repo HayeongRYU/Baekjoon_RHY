@@ -4,6 +4,7 @@ using namespace std;
 int a[10001];
 int s;
 
+//각 기능에 대한 함수 정의
 void push(int x){
     a[s]=x;//top에 push하기(맨위에 push하는거라 s사이즈에 집어넣기)
     s++;//사이즈 +1
@@ -26,6 +27,8 @@ int top(){
     if(s==0) return -1;
     return a[s-1];
 }
+
+
 
 int main(){
     int num;
