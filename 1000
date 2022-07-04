@@ -1,0 +1,2 @@
+A,B = input().split()#첫 줄에 A와 B가 주어지므로
+print(int(A)+int(B))
