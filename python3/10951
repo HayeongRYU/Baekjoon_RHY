@@ -1,0 +1,17 @@
+#while반복문이 돌아가는 동안 try except문을 이용해 주어지는 테스트 케이스만 검사
+#try: 
+#except:
+
+
+while True:
+  try:
+    A,B=map(int, input().split())
+    print(A+B)
+  except:
+    break
+
+"""try:
+  A,B=map(int, input().split())
+  print(A+B)
+except:
+  exit()"""
