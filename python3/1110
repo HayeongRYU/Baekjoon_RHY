@@ -1,0 +1,14 @@
+N=int(input())#정수
+cnt=0#사이클 길이
+
+new=N
+while True:
+  a = (new%10)
+  b = ((new//10) + (new%10))%10#덧셈
+  new = a*10+b #새로운 수
+  #print(a, '+', b,'=',new)
+  cnt+=1
+  if N==new:
+    break
+  
+print(cnt)
