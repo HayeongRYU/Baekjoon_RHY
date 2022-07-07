@@ -1,0 +1,15 @@
+
+test=[]
+T=int(input())
+
+for i in range(T):
+  cnt=0
+  result=0
+  ox=list(input())
+  for j in ox:
+    if j=='O':
+      cnt+=1
+      result+=cnt
+    elif j=='X':
+      cnt=0
+  print(result)
