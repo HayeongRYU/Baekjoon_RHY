@@ -1,0 +1,7 @@
+arr=[]
+for j in range(9):
+  x=int(input())
+  arr.append(x)
+
+
+print(max(arr), arr.index(max(arr))+1)
