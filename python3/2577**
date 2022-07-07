@@ -1,0 +1,9 @@
+A=int(input())
+B=int(input())
+C=int(input())
+
+#문자열(str)로 변환후 list로 묶는다.
+result = list(str(A*B*C))
+
+for i in range(10):
+  print(result.count(str(i)))
