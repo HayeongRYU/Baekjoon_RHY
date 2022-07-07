@@ -1,0 +1,10 @@
+a=[]#입력받은 값 저장
+b=[]#나머지 값 저장
+for i in range(10):
+  x=int(input())
+  a.append(x)
+  x=x%42
+  b.append(x)
+
+b_unique=list(set(b))#중복제거(집합연산 이용)
+print(len(b_unique))
