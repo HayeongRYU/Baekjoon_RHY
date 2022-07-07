@@ -1,0 +1,21 @@
+C=int(input())
+for i in range(C):
+  cnt=0
+
+  score=list(map(int, input().split()))
+      #학생수N과 점수차례로 입력 
+  # 평균을 넘는 학생들의 비율 출력
+  N=score[0]
+  summ = sum(score)-N
+  avg=summ/N#기본 평균구하기
+
+  score=score[1:]
+  
+  for j in score:
+    if j>avg:#각 학생들을 평균에 비교. 평균을 넘을 때
+      cnt+=1#학생수 카운트
+    #반복문 빠져나와서
+    rate = (cnt/N)*100#평균넘는 학생들의 비율
+      
+      
+  print("{:.3f}%".format(rate))
